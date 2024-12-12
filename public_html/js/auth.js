@@ -1,6 +1,6 @@
 document.getElementById('auth-form').addEventListener('submit', async (event) => {
     event.preventDefault();
-    const username = document.getElementById('username').value.trim();
+    const username = document.getElementById('username').value.trim().toLowerCase();
 
     if (!username) {
         alert('Username cannot be empty.');

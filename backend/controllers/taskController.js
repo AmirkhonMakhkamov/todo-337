@@ -130,10 +130,6 @@ const updateTask = async (req, res) => {
             return res.status(404).json({ message: 'Task not found' });
         }
 
-        // if (!task.owner.equals(ownerId)) {
-        //     return res.status(403).json({ message: 'You can only update your own tasks' });
-        // }
-
         // Store old values for activity log
         const changes = [];
         if (title && title !== task.title) changes.push('title');

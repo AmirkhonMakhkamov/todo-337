@@ -25,13 +25,20 @@ function createHeader(username) {
 
     header.innerHTML = `
         <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex justify-content-center align-items-center cursor-pointer" onclick="window.location.href='/dashboard/'">
-                <i class="lni lni-check-square-2 font-50 text-primary d-block"></i>
-                <h3 class="text-primary">TODO Tasks</h3>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center cursor-pointer" onclick="window.location.href='/dashboard/'">
+                    <i class="lni lni-check-square-2 font-50 text-primary d-block"></i>
+                    <h3 class="text-primary">TODO Tasks</h3>
+                </div>
+                
+                <a href="/help" class="btn btn-outline-primary d-none d-md-flex justify-content-center align-items-center ms-4">
+                    <i class="lni lni-question-mark-circle d-block"></i>
+                    <span class="ms-1">Help</span>
+                </a>
             </div>
 
             <div class="d-flex align-items-center">
-                <p>Hello, <span class="text-capitalize">${username}</span></p>
+                <p><span>Hello,</span> <span class="text-capitalize">${username}</span></p>
 
                 <button type="button" id="logout" class="ms-4 btn btn-light border">
                     Logout

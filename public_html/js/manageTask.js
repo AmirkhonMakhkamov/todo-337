@@ -318,7 +318,6 @@ deleteTaskButton.addEventListener('click', async () => {
     } catch (error) {
         console.error('Error deleting task:', error);
         showNotification(error.message, 'error');
-        // Re-enable the delete button if there was an error
         deleteTaskButton.disabled = false;
     }
 });
