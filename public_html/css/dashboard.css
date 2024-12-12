@@ -1,0 +1,21 @@
+/*.loader {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+
+/*    display: flex;*/
+/*    align-content: center;*/
+/*    justify-content: center;*/
+/*    text-align: center;*/
+
+/*    background-color: rgba(0, 0, 0, 0.2);*/
+
+/*    z-index: 9999;*/
+/*}*/
+
+.nav li {
+    margin-right: 25px;
+}
